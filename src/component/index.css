@@ -27,11 +27,11 @@
 .content-about {
     margin: auto;
     width: 60%;
-    height: 700px;
 }
 
 .content-about .p {
     font-size: 16px;
     color: #9b9b9b;
+    line-height: 2;
     text-align: justify;
 }
