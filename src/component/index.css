@@ -1,0 +1,37 @@
+.row-gutter {
+    background: #fff !important;
+}
+
+.gutter-row {
+    margin-bottom: 20px
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+}
+
+.content {
+    margin: auto;
+    width: 80%;
+    height: 700px;
+    text-align: center;
+    padding: 250px 0;
+}
+
+.content-portfolio {
+    margin: auto;
+    width: 80%;
+}
+
+.content-about {
+    margin: auto;
+    width: 60%;
+    height: 700px;
+}
+
+.content-about .p {
+    font-size: 16px;
+    color: #9b9b9b;
+    text-align: justify;
+}

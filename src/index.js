@@ -3,6 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import * as firebase from 'firebase'
+import 'antd/dist/antd.min.css';
+
+var config = {
+  apiKey: "AIzaSyANyS7cLKqNmARrV1RmeI9zZUnfyApLh-A",
+  authDomain: "fajri-portfolio.firebaseapp.com",
+  databaseURL: "https://fajri-portfolio.firebaseio.com",
+  projectId: "fajri-portfolio",
+  storageBucket: "fajri-portfolio.appspot.com",
+  messagingSenderId: "718080219766"
+};
+
+firebase.initializeApp(config)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
