@@ -4,7 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import * as firebase from 'firebase'
 import 'antd/dist/antd.min.css';
-import Navbar from './component/Navbar';
+import App from './App';
 
 var config = {
   apiKey: "AIzaSyANyS7cLKqNmARrV1RmeI9zZUnfyApLh-A",
@@ -17,7 +17,7 @@ var config = {
 
 firebase.initializeApp(config)
 
-ReactDOM.render(<Navbar />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
