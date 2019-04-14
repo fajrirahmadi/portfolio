@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../index';
 import { IoLogoFacebook, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoLogoYoutube, IoMdJournal } from "react-icons/io";
 
 const Links = () => (

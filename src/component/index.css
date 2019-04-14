@@ -21,7 +21,7 @@
 
 .content-portfolio {
     margin: auto;
-    width: 80%;
+    width: 60%;
 }
 
 .content-about {
@@ -34,4 +34,18 @@
     color: #9b9b9b;
     line-height: 2;
     text-align: justify;
+}
+
+.image-large {
+    max-width: 200px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.image-medium {
+    max-width: 150px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
 }

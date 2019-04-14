@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import '../index.css';
 import {Menu, Layout} from "antd";
 import Links from './Footer';
-import '../App.css';
 import Home from './Home';
 import Contact from "./Contact";
 import About from "./About";

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import * as firebase from 'firebase'
 import 'antd/dist/antd.min.css';
+import Navbar from './component/Navbar';
 
 var config = {
   apiKey: "AIzaSyANyS7cLKqNmARrV1RmeI9zZUnfyApLh-A",
@@ -17,9 +17,9 @@ var config = {
 
 firebase.initializeApp(config)
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Navbar />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register();
