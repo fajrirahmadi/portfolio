@@ -12,6 +12,7 @@ class Home extends Component {
     }
 
     componentDidMount(){
+        this.props.getRouterName('home');
         this.getListSajak();
     }
 

@@ -5,28 +5,32 @@ import './index.css'
 
 class DetailPortfolio extends Component { 
 
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
-            sajak: null
+            id: props.match.params.id,
+            sajak: {}
         }
+        console.log(this.props)
     }
 
     componentDidMount() {
-        const { id } = this.props.match.params
-
-        firebase.database().ref('/portfolio/' + id).once('value').then((snapshot) => {
-            console.log(snapshot)
+        this.props.getRouterName('portfolio')
+        firebase.database().ref('/portfolio/' + this.state.id).once('value').then((snapshot) => {
+            console.log(this.state.id)
+            console.log(snapshot.val())
             this.setState({
-                
+                sajak: snapshot.val()
             })
         });
     }
 
     render() {
-        return <div>
-            <h1>Hai from detail</h1>
-        </div>
+        return  (<div className='content-detail-portfolio'>
+                    <img className='image-large' alt="portfolio" src={this.state.sajak.image} />
+                    <h1 style={{marginTop:36, fontSize:36}}><b>{this.state.sajak.title}</b></h1>
+                    <p className='content-detail'>"{this.state.sajak.description}"</p>
+                </div>)
     }
 }
 

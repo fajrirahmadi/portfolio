@@ -29,6 +29,13 @@
     width: 60%;
 }
 
+.content-detail-portfolio {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    margin-top: 72px;
+}
+
 .content-about .p {
     font-size: 16px;
     color: #9b9b9b;
@@ -48,4 +55,12 @@
     max-height: 300px;
     width: auto;
     height: auto;
+}
+
+#more {display: none;}
+
+.content-detail {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 24px;
 }
