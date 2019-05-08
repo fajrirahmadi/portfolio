@@ -3,7 +3,7 @@ import DetailPortfolio from './component/DetailPortfolio'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css';
 import Home from './component/Home';
-import Contact from "./component/Contact";
+import Contact from "./component/Portfolio";
 import About from "./component/About";
 
 class App extends Component {
