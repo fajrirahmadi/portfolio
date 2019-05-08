@@ -39,8 +39,8 @@ class Contact extends Component {
     render (){
         return  (<div>
                     <div className='content-portfolio'>
-                        <h1 style={{color:'#fff'}}>{this.state.nama}</h1>
-                        <div id='rounded-line-white'/>
+                        <h1>{this.state.nama}</h1>
+                        <div id='rounded-line-green'/>
                         <Modal
                             title={this.state.title}
                             visible={this.state.visible}

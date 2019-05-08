@@ -3,6 +3,8 @@ import './index.css';
 import Portfolio from './Portfolio';
 import About from './About';
 import Links from './Footer';
+import WorkExperience from './WorkExperience';
+import { Divider } from 'antd';
 
 class Home extends Component {
 
@@ -13,8 +15,12 @@ class Home extends Component {
                         <h3 className="description">Native Android Developer</h3>
                     </div>
                     <Links />
+                    <Divider/>
                     <Portfolio/>
+                    <Divider/>
                     <About/>
+                    <Divider/>
+                    <WorkExperience/>
                     <div className='footer'>
                         <h3 style={{color:'#fff'}}>Copyright &copy;2019 | This page created with Love by Fajri Rahmadi</h3>
                     </div>

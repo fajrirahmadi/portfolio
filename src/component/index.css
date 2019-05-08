@@ -3,7 +3,7 @@
 }
 
 .gutter-row {
-    margin-bottom: 20px
+    margin-bottom: 0px
 }
 
 .title {
@@ -30,11 +30,11 @@
 .content-portfolio {
     margin: auto;
     width: 100%;
+    min-height: 800px;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 32px;
     padding-bottom: 32px;
-    background: #0aa00a;
     color: white;
 }
 
@@ -43,6 +43,16 @@
     width: 60%;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.content-work-experience {
+    margin: auto;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 40%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: white;
 }
 
 .content-detail-portfolio {
@@ -54,7 +64,6 @@
 
 .content-about .p {
     font-size: 16px;
-    color: #9b9b9b;
     line-height: 2;
     text-align: justify;
 }
