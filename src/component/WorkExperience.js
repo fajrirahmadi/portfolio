@@ -10,7 +10,7 @@ class WorkExperience extends Component {
             <div className='content-work-experience'>
                 <h1>Work Experience</h1>
                 <div id='rounded-line-green'/>
-                <Timeline>
+                <Timeline style={{maxWidth:700}}>
                     <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '20px' }} />}>
                         <b>2017</b>
                     </Timeline.Item>

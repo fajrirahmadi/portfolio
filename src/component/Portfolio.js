@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import * as firebase from 'firebase';
 import { Card, Modal, Button} from 'antd';
 import { Row, Col } from 'react-flexbox-grid';
-import './index.css'
+import './index.css';
 
 const { Meta } = Card;
 
@@ -32,7 +32,7 @@ class Contact extends Component {
                 title: returnArr[0].title,
                 description: returnArr[0].description,
                 image: returnArr[0].image
-            })
+            });
         });
     }
 
@@ -50,16 +50,18 @@ class Contact extends Component {
                         <Row>
                             {this.state.sajakList.map((sajak, index) => 
                                 <Col xs={12} sm={12} md={6} lg={3}>
-                                    <div style={{marginBottom:15}}>
-                                        <Card 
-                                        onClick = {() => this.handleClick(sajak)}
-                                        hoverable
-                                        cover={<img alt="portfolio" src={sajak.image}/>}>
-                                            <Meta
-                                                title={sajak.title}
-                                            />
-                                        </Card>
-                                    </div>
+                                    <a href={sajak.link}>
+                                        <div style={{marginBottom:15}}>
+                                            <Card 
+                                            onClick = {() => this.handleClick(sajak)}
+                                            hoverable
+                                            cover={<img alt="portfolio" src={sajak.image}/>}>
+                                                <Meta
+                                                    title={sajak.title}
+                                                />
+                                            </Card>
+                                        </div>
+                                    </a>
                                 </Col>
                             )}
                         </Row>
@@ -71,8 +73,7 @@ class Contact extends Component {
         this.setState({
             title: sajak.title,
             description: sajak.description,
-            image: sajak.image,
-            visible:true
+            image: sajak.image
         })
     }
 
