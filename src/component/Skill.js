@@ -37,25 +37,29 @@ class Skill extends Component {
                 <div>
                     <Tabs defaultActiveKey="0" tabPosition="left">
                         {this.state.skill.map((skil, index) => {
-                            return (
-                                <TabPane tab={skil.title} key={index}>
-                                    <Timeline style={{maxWidth:300, paddingRight:16}}>
-                                        {Object.values(skil.value).map((data) => {
-                                            return (
-                                                <Timeline.Item>
-                                                    <b>{data.title}</b>
-                                                    <Progress type='line' percent={data.progress} successPercent={data.progress}/>
-                                                </Timeline.Item>
-                                            )
-                                        })}
-                                    </Timeline>
-                                </TabPane>
-                            )
+                            this.getTabPaneSkill(skil, index)
                         })}
                     </Tabs>
                 </div>
             </div>
         );
+    }
+
+    getTabPaneSkill(skill, index) {
+        return (
+            <TabPane tab={skill.title} key={index}>
+                <Timeline style={{maxWidth:300, paddingRight:16}}>
+                    {Object.values(skill.value).map((data) => {
+                        return (
+                            <Timeline.Item>
+                                <b>{data.title}</b>
+                                <Progress type='line' percent={data.progress} successPercent={data.progress}/>
+                            </Timeline.Item>
+                        )
+                    })}
+                </Timeline>
+            </TabPane>
+        )
     }
 }
 
