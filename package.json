@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.16.2",
-    "firebase": "^5.9.3",
+    "firebase": "^7.2.2",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -31,5 +31,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fajrirahmadi/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fajrirahmadi/portfolio/issues"
+  }
 }

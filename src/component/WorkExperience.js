@@ -37,10 +37,20 @@ class WorkExperience extends Component {
                     </Timeline.Item>
                     <Timeline.Item color="green">
                         <h3>Android Developer - PT Axiata Digital Service Indonesia</h3>
-                        <p>December 2018 - Now</p>
+                        <p>December 2018 - Augustus 2019</p>
                         <p><b>Division: </b>Product &amp; Technology Marketing</p>
                         <p style={{textAlign:'justify'}}><b>Responsibility: </b>Create android application base on product requirement. I do my task base on priority release</p>
                         <p><b>Product: </b>Boost Penjual</p>
+                    </Timeline.Item>
+                    <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '20px' }} />}>
+                        <b>2019</b>
+                    </Timeline.Item>
+                    <Timeline.Item color="green">
+                        <h3>Product Engineer - PT Strongbee</h3>
+                        <p>Augustus 2019 - Now</p>
+                        <p><b>Division: </b>Mobile Developer Team</p>
+                        <p style={{textAlign:'justify'}}><b>Responsibility: </b>Create android application base on product requirement every sprint, enhancement code, &amp; fixing bug</p>
+                        <p><b>Product: </b>Strongbee Apps</p>
                     </Timeline.Item>
                 </Timeline>
             </div>

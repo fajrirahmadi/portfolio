@@ -1,9 +1,10 @@
 import React from 'react';
 import '../index';
-import { IoLogoFacebook, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
+import { IoLogoFacebook, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoLogoTwitter, IoLogoWhatsapp } from "react-icons/io";
 
 const Links = () => (
   <div className="bottom-layout">
+    <a href="https://api.whatsapp.com/send?phone=6285364368226" target="black"><IoLogoWhatsapp/></a>
     <a href="https://www.facebook.com/thegeanfu" target="blank"><IoLogoFacebook/></a>
     <a href="https://www.instagram.com/fajri_rahmadi" target="blank"><IoLogoInstagram/></a>
     <a href="https://twitter.com/Arloji_2213" target="blank" className="medium-icon"><IoLogoTwitter/></a>

@@ -35,11 +35,12 @@ class Skill extends Component {
                 <h1>Skill Competencies</h1>
                 <div id='rounded-line-green'/>
                 <div>
-                    <Tabs defaultActiveKey="0" tabPosition="left">
+                    {/* <Tabs defaultActiveKey="0" tabPosition="left">
                         {this.state.skill.map((skil, index) => {
                             this.getTabPaneSkill(skil, index)
                         })}
-                    </Tabs>
+                    </Tabs> */}
+                    
                 </div>
             </div>
         );

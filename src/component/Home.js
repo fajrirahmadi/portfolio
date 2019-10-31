@@ -5,7 +5,6 @@ import About from './About';
 import Links from './Footer';
 import WorkExperience from './WorkExperience';
 import { Divider , Avatar} from 'antd';
-import Skill from './Skill';
 import image from '../assets/image/profile_fajri.png'
 
 class Home extends Component {
@@ -25,7 +24,7 @@ class Home extends Component {
                     <Divider/>
                     <Portfolio/>
                     <Divider/>
-                    <Skill/>
+                    {/* <Skill/> */}
                     <div className='footer'>
                         <h3 style={{color:'#fff'}}>Copyright &copy;2019 | Fajri Rahmadi</h3>
                     </div>
